@@ -1,1 +1,66 @@
-<p>role-details works!</p>
+<div class="text-center flex flex-col items-center">
+	@if (!role) {
+		<p>Rôle non trouvé.</p>
+	} @else {
+		<img [src]="role.image" class="img-fluid mb-3 rounded-xl h-100" />
+
+		<h1 class="mb-6 text-3xl font-bold">{{ role.name }}</h1>
+
+		<em class="italic mb-1 text-sm text-gray-700">
+			@if (
+				role.caracteristiques.length +
+					role.pouvoirs.jour.length +
+					role.pouvoirs.nuit.length ==
+				0
+			) {
+				{{ role.name }} est un rôle sans caractéristiques ni pouvoirs.
+			} @else {
+				{{ role.name }} est un rôle avec
+				@if (role.caracteristiques.length > 0) {
+					@if (role.caracteristiques.length == 1) {
+						une caractéristique
+					} @else {
+						des caractéristiques
+					}
+				}
+				@if (
+					role.caracteristiques.length > 0 &&
+					role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
+				) {
+					et
+				}
+				@if (
+					role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
+				) {
+					@if (
+						role.pouvoirs.jour.length + role.pouvoirs.nuit.length ==
+						1
+					) {
+						un pouvoir
+					} @else {
+						des pouvoirs
+					}
+				}
+				.
+			}
+		</em>
+
+		<div class="space-y-3">
+			@for (
+				caracteristique of role.caracteristiques;
+				track caracteristique
+			) {
+				<p>{{ caracteristique }} (caractéristique)</p>
+			}
+			@for (pouvoir of role.pouvoirs.jour; track pouvoir) {
+				<p>{{ pouvoir }} (pouvoir de jour)</p>
+			}
+			@for (pouvoir of role.pouvoirs.nuit; track pouvoir) {
+				<p>{{ pouvoir }} (pouvoir de nuit)</p>
+			}
+		</div>
+
+		<p class="mt-2 mb-3">{{ role.details }}</p>
+		<em class="italic mb-3 text-sm">Example: {{ role.exemple }}</em>
+	}
+</div>
