@@ -20,30 +20,25 @@
 		},
 		"details": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"exemple": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"image": "roles/full.png"
+		"image": "https://thumbs.dreamstime.com/b/water-flowing-full-glass-28933313.jpg"
 	},
 	{
 		"name": "Intermediate",
 		"camp": "Solitaire",
 		"aura": "Neutre",
-		"caracteristiques": [
-			"Lorem ipsum dolor sit amet."
-		],
+		"caracteristiques": ["Lorem ipsum dolor sit amet."],
 		"pouvoirs": {
-			"jour": [
-				"Lorem ipsum dolor sit amet."
-			]
+			"jour": ["Lorem ipsum dolor sit amet."]
 		},
 		"details": "Consectetur adipiscing elit.",
 		"exemple": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"image": "roles/intermediate.png"
+		"image": "https://thumbs.dreamstime.com/b/businessman-half-empty-full-glass-concept-264206304.jpg"
 	},
 	{
 		"name": "Minimal",
 		"camp": "Solitaire",
 		"aura": "Neutre",
 		"details": "Lorem ipsum dolor sit amet.",
-		"exemple": "Lorem ipsum dolor sit amet.",
-		"image": "roles/minimal.png"
+		"image": "https://static.vecteezy.com/system/resources/previews/013/519/821/large_2x/empty-glass-illustration-on-a-white-background-vector.jpg"
 	}
 ]
