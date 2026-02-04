@@ -20,7 +20,8 @@
 		},
 		"details": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"exemple": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		"image": "https://thumbs.dreamstime.com/b/water-flowing-full-glass-28933313.jpg"
+		"image": "https://thumbs.dreamstime.com/b/water-flowing-full-glass-28933313.jpg",
+		"seeAlso": ["Minimal", "Intermediate"]
 	},
 	{
 		"name": "Intermediate",
@@ -31,7 +32,8 @@
 		},
 		"details": "Consectetur adipiscing elit.",
 		"exemple": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		"image": "https://thumbs.dreamstime.com/b/businessman-half-empty-full-glass-concept-264206304.jpg"
+		"image": "https://thumbs.dreamstime.com/b/businessman-half-empty-full-glass-concept-264206304.jpg",
+		"seeAlso": ["Minimal"]
 	},
 	{
 		"name": "Minimal",

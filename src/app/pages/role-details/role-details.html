@@ -61,8 +61,18 @@
 		</div>
 
 		<p class="mt-2 mb-3">{{ role.details }}</p>
+
 		@if (role.exemple) {
 			<em class="italic mb-3 text-sm">Example: {{ role.exemple }}</em>
+		}
+
+		@if (role.seeAlso.length > 0) {
+			<span class="mt-4 font-semibold mr-2">Voir aussi:</span>
+			<div class="flex flex-row flex-wrap gap-2">
+				@for (seeAlsoRole of role.seeAlso; track seeAlsoRole) {
+					<a [href]="'/role/' + seeAlsoRole.toLowerCase()">{{ seeAlsoRole }}</a>
+				}
+			</div>
 		}
 	}
 </div>

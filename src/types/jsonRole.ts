@@ -13,5 +13,6 @@ interface Role {
 	details: string;
 	exemple?: string;
 	image?: string;
+	seeAlso?: string[];
 }
 export default Role;

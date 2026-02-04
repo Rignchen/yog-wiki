@@ -17,6 +17,7 @@ export class Role {
 		this.image =
 			roleData.image ??
 			`roles/${this.name.toLowerCase().replace(/ /g, '_')}.png`;
+		this.seeAlso = roleData.seeAlso ?? [];
 	}
 	name: string;
 	camp: Camp;
@@ -29,4 +30,5 @@ export class Role {
 	details: string;
 	exemple?: string;
 	image: string;
+	seeAlso: string[];
 }
