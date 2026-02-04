@@ -27,6 +27,6 @@ export class Role {
 		nuit: string[];
 	};
 	details: string;
-	exemple: string;
+	exemple?: string;
 	image: string;
 }

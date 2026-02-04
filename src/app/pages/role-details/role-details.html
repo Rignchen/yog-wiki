@@ -61,6 +61,8 @@
 		</div>
 
 		<p class="mt-2 mb-3">{{ role.details }}</p>
-		<em class="italic mb-3 text-sm">Example: {{ role.exemple }}</em>
+		@if (role.exemple) {
+			<em class="italic mb-3 text-sm">Example: {{ role.exemple }}</em>
+		}
 	}
 </div>

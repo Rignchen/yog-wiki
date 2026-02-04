@@ -11,7 +11,7 @@ interface Role {
 		nuit?: string[];
 	};
 	details: string;
-	exemple: string;
+	exemple?: string;
 	image?: string;
 }
 export default Role;
