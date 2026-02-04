@@ -1,0 +1,49 @@
+[
+	{
+		"name": "Full",
+		"camp": "Solitaire",
+		"aura": "Neutre",
+		"caracteristiques": [
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		],
+		"pouvoirs": {
+			"jour": [
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+				"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+			],
+			"nuit": [
+				"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+				"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+			]
+		},
+		"details": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"exemple": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"image": "roles/full.png"
+	},
+	{
+		"name": "Intermediate",
+		"camp": "Solitaire",
+		"aura": "Neutre",
+		"caracteristiques": [
+			"Lorem ipsum dolor sit amet."
+		],
+		"pouvoirs": {
+			"jour": [
+				"Lorem ipsum dolor sit amet."
+			]
+		},
+		"details": "Consectetur adipiscing elit.",
+		"exemple": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"image": "roles/intermediate.png"
+	},
+	{
+		"name": "Minimal",
+		"camp": "Solitaire",
+		"aura": "Neutre",
+		"details": "Lorem ipsum dolor sit amet.",
+		"exemple": "Lorem ipsum dolor sit amet.",
+		"image": "roles/minimal.png"
+	}
+]
