@@ -9,10 +9,10 @@ export const serverRoutes: ServerRoute[] = [
 		renderMode: RenderMode.Prerender,
 		getPrerenderParams: async () => {
 			const roles = inject(Roles);
-			return roles.list.map(role => ({
-				name: role.name
+			return roles.list.map((role) => ({
+				name: role.name,
 			}));
-		}
+		},
 	},
 	{
 		path: '**',

@@ -7,5 +7,7 @@ import RoleList from '#public/roles.json';
 	providedIn: 'root',
 })
 export class Roles {
-	public list: Role[] = (RoleList as jsonRole[]).map((roleData) => new Role(roleData));
+	public list: Role[] = (RoleList as jsonRole[]).map(
+		(roleData) => new Role(roleData),
+	);
 }

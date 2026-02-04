@@ -14,7 +14,9 @@ export class Role {
 		};
 		this.details = roleData.details;
 		this.exemple = roleData.exemple;
-		this.image = roleData.image ?? `roles/${this.name.toLowerCase().replace(/ /g, '_')}.png`;
+		this.image =
+			roleData.image ??
+			`roles/${this.name.toLowerCase().replace(/ /g, '_')}.png`;
 	}
 	name: string;
 	camp: Camp;

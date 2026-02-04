@@ -1,7 +1,7 @@
 enum Camp {
-	Yokai = "Yokai",
-	Oni = "Oni",
-	Solitaire = "Solitaire",
-	Special = "Special",
+	Yokai = 'Yokai',
+	Oni = 'Oni',
+	Solitaire = 'Solitaire',
+	Special = 'Special',
 }
 export default Camp;

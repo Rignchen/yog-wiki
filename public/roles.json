@@ -27,9 +27,7 @@
 		"camp": "Solitaire",
 		"aura": "Neutre",
 		"pouvoirs": {
-			"jour": [
-				"Lorem ipsum dolor sit amet."
-			]
+			"jour": ["Lorem ipsum dolor sit amet."]
 		},
 		"details": "Consectetur adipiscing elit.",
 		"exemple": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
