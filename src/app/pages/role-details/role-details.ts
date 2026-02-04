@@ -2,10 +2,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Component, inject } from '@angular/core';
 import { Roles } from '#services/roles';
 import { Role as RoleType } from '#types/role';
+import { RouterModule } from '@angular/router';
 
 @Component({
 	selector: 'app-role-details',
-	imports: [],
+	imports: [RouterModule],
 	templateUrl: './role-details.html',
 	styleUrl: './role-details.css',
 })
