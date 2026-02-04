@@ -26,7 +26,6 @@
 		"name": "Intermediate",
 		"camp": "Solitaire",
 		"aura": "Neutre",
-		"caracteristiques": ["Lorem ipsum dolor sit amet."],
 		"pouvoirs": {
 			"jour": ["Lorem ipsum dolor sit amet."]
 		},
