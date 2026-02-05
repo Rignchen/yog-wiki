@@ -14,5 +14,12 @@
 		"details": "Toute les caractéristiques du rôle qu'elle utilise sera activée (sauf pour l'accès à des salons), de plus Eterna prendra l'aura du rôle utiliser.\n\nSi Eterna récupère le pouvoir d'un Oni, elle peut en plus tuer une personne de son choix tout en ayant les caractéristiques des Kill Oni.\n\nSi Eterna récupère le pouvoir d'un Perfide, elle peut en plus essayer de deviner le rôle de la personne choisie pour essayer de la tuer tout en ayant les caractéristiques des Kill Perfides.",
 		"exemple": "Extrabuki est mort je suis Eterna donc j'utilise son pouvoir, donc je peux tuer et je devient invulnérable a l'attaque des onis pour cette nuit, en conséquence mon aura devient Bestiale.",
 		"image": "roles/eterna.png"
+	},
+	{
+		"name": "Jibanyan",
+		"camp": "Yo-Kai",
+		"aura": "Neutre",
+		"details":"Jibanyan est un simple Yo-Kai qui ne possède aucuns pouvoirs.",
+		"image": "roles/eterna.png"
 	}
 ]
