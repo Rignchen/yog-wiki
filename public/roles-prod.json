@@ -20,6 +20,20 @@
 		"camp": "Yo-Kai",
 		"aura": "Neutre",
 		"details":"Jibanyan est un simple Yo-Kai qui ne possède aucuns pouvoirs.",
-		"image": "roles/eterna.png"
+		"image": "roles/jibanyan.png"
 	},
+		{
+		"name": "Robonyan",
+		"camp": "Yo-kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+		"Chaque nuit, Robonyan peut demander à connaître le rôle d'un joueur, il connaîtra donc son rôle.",
+			]
+		},
+		"details": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"exemple": "Je suis Robonyan et je décide de connaître le rôle de Tabuki, je verrai : \"Le rôle de Tabuki est : Jibanyan\" si celui-ci est Jibanyan",
+		"image": "roles/robonyan.png"
+	}
+
 ]
