@@ -1,84 +1,86 @@
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center m-6">
 	@if (!role) {
-		<p>Rôle non trouvé.</p>
+		<p class="text-bubble">Rôle non trouvé.</p>
 	} @else {
 		<img [src]="role.image" class="img-fluid mb-3 rounded-xl h-100" />
 
-		<h1 class="mb-6 text-3xl font-bold">{{ role.name }}</h1>
+		<div class="text-bubble flex flex-col items-center">
+			<h1 class="mb-6 text-3xl font-bold">{{ role.name }}</h1>
 
-		<em class="italic mb-1 text-sm text-gray-700">
-			@if (
-				role.caracteristiques.length +
-					role.pouvoirs.jour.length +
-					role.pouvoirs.nuit.length ==
-				0
-			) {
-				{{ role.name }} est un rôle sans caractéristiques ni pouvoirs.
-			} @else {
-				{{ role.name }} est un rôle avec
-				@if (role.caracteristiques.length > 0) {
-					@if (role.caracteristiques.length == 1) {
-						une caractéristique
-					} @else {
-						des caractéristiques
+			<em class="italic mb-1 text-sm text-gray-700">
+				@if (
+					role.caracteristiques.length +
+						role.pouvoirs.jour.length +
+						role.pouvoirs.nuit.length ==
+					0
+				) {
+					{{ role.name }} est un rôle sans caractéristiques ni pouvoirs.
+				} @else {
+					{{ role.name }} est un rôle avec
+					@if (role.caracteristiques.length > 0) {
+						@if (role.caracteristiques.length == 1) {
+							une caractéristique
+						} @else {
+							des caractéristiques
+						}
 					}
-				}
-				@if (
-					role.caracteristiques.length > 0 &&
-					role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
-				) {
-					et
-				}
-				@if (
-					role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
-				) {
 					@if (
-						role.pouvoirs.jour.length + role.pouvoirs.nuit.length ==
-						1
+						role.caracteristiques.length > 0 &&
+						role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
 					) {
-						un pouvoir
-					} @else {
-						des pouvoirs
+						et
 					}
+					@if (
+						role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
+					) {
+						@if (
+							role.pouvoirs.jour.length + role.pouvoirs.nuit.length ==
+							1
+						) {
+							un pouvoir
+						} @else {
+							des pouvoirs
+						}
+					}
+					.
 				}
-				.
+			</em>
+
+			<p class="mb-3 text-gray-900 flex flex-row gap-4">
+				<span>Camp: {{ role.camp }}</span>
+				|
+				<span>Aura: {{ role.aura }}</span>
+			</p>
+
+			@if (descriptions.length > 0) {
+				<table>
+					@for (description of descriptions; track description) {
+						<tr>
+							<td class="align-top pr-4">
+								<strong class="bold">
+									{{ description.type }}
+								</strong>
+							</td>
+							<td>{{ description.text }}</td>
+						</tr>
+					}
+				</table>
 			}
-		</em>
 
-		<p class="mb-3 text-gray-900 flex flex-row gap-4">
-			<span>Camp: {{ role.camp }}</span>
-			|
-			<span>Aura: {{ role.aura }}</span>
-		</p>
+			<p class="mt-2 mb-3">{{ role.details }}</p>
 
-		@if (descriptions.length > 0) {
-			<table>
-				@for (description of descriptions; track description) {
-					<tr>
-						<td class="align-top pr-4">
-							<strong class="bold">
-								{{ description.type }}
-							</strong>
-						</td>
-						<td>{{ description.text }}</td>
-					</tr>
-				}
-			</table>
-		}
+			@if (role.exemple) {
+				<em class="italic mb-3 text-sm">Exemple: {{ role.exemple }}</em>
+			}
 
-		<p class="mt-2 mb-3">{{ role.details }}</p>
-
-		@if (role.exemple) {
-			<em class="italic mb-3 text-sm">Exemple: {{ role.exemple }}</em>
-		}
-
-		@if (role.seeAlso.length > 0) {
-			<span class="mt-4 font-semibold mr-2">Voir aussi:</span>
-			<div class="flex flex-row flex-wrap gap-2">
-				@for (seeAlsoRole of role.seeAlso; track seeAlsoRole) {
-					<a [routerLink]="['/role', seeAlsoRole.toLowerCase()]">{{ seeAlsoRole }}</a>
-				}
-			</div>
-		}
+			@if (role.seeAlso.length > 0) {
+				<span class="mt-4 font-semibold mr-2">Voir aussi:</span>
+				<div class="flex flex-row flex-wrap gap-2">
+					@for (seeAlsoRole of role.seeAlso; track seeAlsoRole) {
+						<a [routerLink]="['/role', seeAlsoRole.toLowerCase()]">{{ seeAlsoRole }}</a>
+					}
+				</div>
+			}
+		</div>
 	}
 </div>
