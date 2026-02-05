@@ -1,4 +1,4 @@
-<div class="text-center flex flex-col items-center">
+<div class="flex flex-col items-center">
 	@if (!role) {
 		<p>Rôle non trouvé.</p>
 	} @else {
@@ -51,20 +51,20 @@
 			<span>Aura: {{ role.aura }}</span>
 		</p>
 
-		<div class="space-y-3">
-			@for (
-				caracteristique of role.caracteristiques;
-				track caracteristique
-			) {
-				<p>{{ caracteristique }} (caractéristique)</p>
-			}
-			@for (pouvoir of role.pouvoirs.jour; track pouvoir) {
-				<p>{{ pouvoir }} (pouvoir de jour)</p>
-			}
-			@for (pouvoir of role.pouvoirs.nuit; track pouvoir) {
-				<p>{{ pouvoir }} (pouvoir de nuit)</p>
-			}
-		</div>
+		@if (descriptions.length > 0) {
+			<table>
+				@for (description of descriptions; track description) {
+					<tr>
+						<td class="align-top pr-4">
+							<strong class="bold">
+								{{ description.type }}
+							</strong>
+						</td>
+						<td>{{ description.text }}</td>
+					</tr>
+				}
+			</table>
+		}
 
 		<p class="mt-2 mb-3">{{ role.details }}</p>
 
