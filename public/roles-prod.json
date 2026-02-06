@@ -8,11 +8,11 @@
 		],
 		"pouvoirs": {
 			"nuit": [
-				"À partir du moment où elle aura un pouvoir elle pourra l'utiliser dans l'état où il est, si elle vient a avoir 2 pouvoirs où plus elle ne pourra pas utiliser le même pouvoir 2 nuit de suite."
+				"À partir du moment où elle aura un pouvoir elle pourra l'utiliser dans l'état où il est, si elle vient a avoir 2 pouvoirs ou plus elle ne pourra pas utiliser le même pouvoir 2 nuits de suite."
 			]
 		},
-		"details": "Toute les caractéristiques du rôle qu'elle utilise sera activée (sauf pour l'accès à des salons), de plus Eterna prendra l'aura du rôle utiliser.\n\nSi Eterna récupère le pouvoir d'un Oni, elle peut en plus tuer une personne de son choix tout en ayant les caractéristiques des Kill Oni.\n\nSi Eterna récupère le pouvoir d'un Perfide, elle peut en plus essayer de deviner le rôle de la personne choisie pour essayer de la tuer tout en ayant les caractéristiques des Kill Perfides.",
-		"exemple": "Extrabuki est mort je suis Eterna donc j'utilise son pouvoir, donc je peux tuer et je devient invulnérable a l'attaque des onis pour cette nuit, en conséquence mon aura devient Bestiale.",
+		"details": "Toutes les caractéristiques du rôle qu'elle utilise seront activées (sauf pour l'accès à des salons), de plus Eterna prendra l'aura du rôle utilisé.\n\nSi Eterna récupère le pouvoir d'un Oni, elle peut en plus tuer une personne de son choix tout en ayant les caractéristiques des kills Onis.\n\nSi Eterna récupère le pouvoir d'un Perfide, elle peut en plus essayer de deviner le rôle de la personne choisie pour essayer de la tuer tout en ayant les caractéristiques des kills Perfides.",
+		"exemple": "Extrabuki est mort je suis Eterna donc j'utilise son pouvoir, je peux donc tuer et je devient invulnérable à l'attaque des Onis pour cette nuit, en conséquence mon aura devient Bestiale.",
 		"image": "roles/eterna.png"
 	},
 	{
@@ -31,7 +31,6 @@
 		"Chaque nuit, Robonyan peut demander à connaître le rôle d'un joueur, il connaîtra donc son rôle.",
 			]
 		},
-		"details": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"exemple": "Je suis Robonyan et je décide de connaître le rôle de Tabuki, je verrai : \"Le rôle de Tabuki est : Jibanyan\" si celui-ci est Jibanyan",
 		"image": "roles/robonyan.png"
 	},
@@ -45,7 +44,7 @@
 			]
 		},
 		"details": "Kyubi n'est pas capable de savoir si il y a des Perfides, Solitaires ou membres de couples avec son pouvoir.",
-		"exemple": "Je suis Kyubi et je décide de regarder si il y a au moins un Oni entre Tabuki, Raf et Le Sniper, je verrai : \"Il y a au moins un Oni ou plus parmi cette liste de joueurs\" si Tabuki est Oni et les 2 autres non.",
+		"exemple": "Je suis Kyubi et je décide de regarder si il y a au moins un Oni entre Tabuki, Ghia et Le Sniper, je verrai : \"Il y a au moins un Oni ou plus parmi cette liste de joueurs\" si Tabuki est Oni et les 2 autres non.",
 		"image": "roles/kyubi.png"
 	},
 		{
@@ -70,7 +69,55 @@
 			]
 		},
 		"details": "Obskyurbi n'est pas capable de savoir si il y a des Onis, Solitaires ou membres de couples avec son pouvoir.",
-		"exemple": "Je suis Obskyurbi et je décide de regarder si il y a au moins un Perfide entre Tabuki, Raf et Le Sniper, je verrai : \"Il y a au moins un Perfide ou plus parmi cette liste de joueurs\" si Tabuki est Perfide et les 2 autres non.",
+		"exemple": "Je suis Obskyurbi et je décide de regarder si il y a au moins un Perfide entre Tabuki, Lace et Le Sniper, je verrai : \"Il y a au moins un Perfide ou plus parmi cette liste de joueurs\" si Tabuki est Perfide et les 2 autres non.",
 		"image": "roles/obskyurbi.png"
+	},
+			{
+		"name": "Égare-dare",
+		"camp": "Yo-Kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+				"Chaque nuit, Égare-dare peut choisir de regarder le dernier message pertinent envoyé dans le salon de son choix. (Les salons privés des joueurs ne peuvent être regardés",
+			]
+		},
+		"details": "Égare-Dare ne peut recevoir que des messages importants, un message comme \"Bonne nuit\" ne lui sera pas envoyé. Si en revanche, aucuns messages n'est importants, un message non-important lui sera envoyé tout de même.",
+		"exemple": "Je suis Égare-Dare et je veux connaître le dernier message envoyé dans la Terr'heure, je verrai : \"Le dernier message de la Terr'heure est : Donc, on tue Tabuki cette nuit\"",
+		"image": "roles/egaredare.png"
+	},
+			{
+		"name": "Espi",
+		"camp": "Yo-Kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+				"Chaque nuit, Espi peut demander à connaître l'aura d'un joueur, il connaîtra donc son aura.",
+			]
+		},
+		"details": "Il existe 4 types d'auras différentes ; Radieuse, Obscure, Bestiale et Neutre. Vous pouvez les retrouver sur les fiches de chaque rôle",
+		"exemple": "Je suis Espi et je décide de connaître l'aura de Tabuki, je verrai : \"L'aura de Tabuki est : Bestiale\" si celui-ci possède une aura bestiale.",
+		"image": "roles/espi.png"
+	},
+			{
+		"name": "Couchtar",
+		"camp": "Yo-Kai",
+		"aura": "Radieuse",
+		"caracteristiques": [
+			"Couchtar peut parler la nuit dans le Yo-Kai World, cependant, tout le monde verra ses messages."
+		],
+		"pouvoirs": {
+			"nuit": [
+				"Soit, chaque nuit, Couchtar peut demander à savoir si un joueur a parlé durant la nuit.",
+			]
+			"nuit": [
+				"Soit, chaque nuit, Couchtar peut demander à connaître le nombre de personnes qui ont parlés la nuit (sans compter les tickets).",
+			]
+		},
+		"details": "Couchtar ne connait pas dans quel salon les messages ont étés envoyés.",
+		"details": "Couchtar à ses informations au matin.",
+		"details": "Parler dans le Yo-Kai World de nuit signifie aussi de montrer à tous son propre rôle.",
+		"exemple": "Je suis Couchtar et je veux savoir si Tabuki a parlé durant la nuit, je verrai : \"Tabuki a parlé durant la nuit\" si Tabuki a parlé dans New-Yorkai (salon des Komaventuriers)",
+		"exemple": "Je suis Couchtar et je veux savoir combien de personnes ont parlés la nuit, je verrai : \"6 personnes ont parlés pendant la nuit\" si 2 personnes ont parlés dans le Palais Enma, 2 ont parlés dans New-Yorkai, 2 ont parlés dans le salon des Fruitnyan.",
+		"image": "roles/couchtar.png"
 	}
 ]
