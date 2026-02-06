@@ -151,5 +151,30 @@
 		"exemple": "Je suis Mog-Nyan et je demande de savoir combien de joueurs ont effectués leurs actions, je verrai \" 7joueurs ont effectués leurs actions\" si Mog-Nyan, Robonyan, Kyubi, Suprarachnus, Camélia, Laure et Marge ont utilisés leurs pouvoirs. ",
 		"exemple": "Je suis Mog-Nyan et je veux savoir si Tabuki a effectué une action, je verrai : \"Tabuki a effectué une action sur Le Sniper\" si Tabuki est Robonyan et a utilisé son pouvoir sur Le Sniper. ",
 		"image": "roles/mognyan.png"
+	},
+		{
+		"name": "Dr. Néant",
+		"camp": "Yo-kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+		"Chaque nuit, Dr. Néant peut inviter la personne morte de son choix dans son ticket durant la nuit.",
+			]
+		},
+		"details": "La personne morte invitée dans le ticket garde l'accès aux Lymbes Éternelles pendant ce temps.",
+		"details": "Il ne peut pas inviter la même personne 2fois dans la même partie.",
+		"image": "roles/drneant.png"
+	},
+		{
+		"name": "Mamollina",
+		"camp": "Yo-kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"jour": [
+				"Une fois par partie, lors du jour, Mamollina peut choisir d'exposer le rôle de son choix. Le joueur ayant ce rôle sera montré avec 4 autres personnes de la partie dans le salon des annonces (les 5 joueurs exposés sont des joueurs encore en vie)",
+			]
+	},
+		"exemple": "Je suis Mamollina et je demande de spoiler le rôle de Gargaros, je verrai dans le salon des annonces : \"Gargaros est parmis Tabuki, Ghia, Le Sniper, Lace et Elina\" si Tabuki est Gargaros.",
+		"image": "roles/mamollina.png"
 	}
 ]
