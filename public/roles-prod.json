@@ -113,6 +113,7 @@
 				"Soit, chaque nuit, Couchtar peut demander à connaître le nombre de personnes qui ont parlés la nuit (sans compter les tickets).",
 			]
 		},
+		"details": "Couchtar peut donc décider quel pouvoir il utilise chaque nuit",
 		"details": "Couchtar ne connait pas dans quel salon les messages ont étés envoyés.",
 		"details": "Couchtar à ses informations au matin.",
 		"details": "Parler dans le Yo-Kai World de nuit signifie aussi de montrer à tous son propre rôle.",
@@ -131,5 +132,24 @@
 		},
 		"exemple": "Je suis Robonyan F et je décide de connaître les envoûtements qu'à subit Tabuki, je verrai : \"Tabuki a été bloqué, Tabuki a été vampirisé, Tabuki a été protégé des Onis et Tabuki a été regardé par le Robonyan\" si Tabuki a été bloqué, vampirisé, protégé contre les Onis et regardé par le Robonyan.",
 		"image": "roles/robonyanf.png"
+	},
+		{
+		"name": "Mog-nyan",
+		"camp": "Yo-kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+		"Soit, chaque nuit, il demande à connaître le nombre de personnes qui ont utilisés leurs pouvoirs durant la nuit.",
+			]
+			"nuit": [
+		"Soit, chaque nuit il peut demander à savoir si une personne en particulier a utilisé son pouvoir et si oui, sur qui il l'a utilisé.",
+			]
+		},
+		"details": "Mog-nyan peut donc décider quel pouvoir il utilise chaque nuit",
+		"details": "Le kill des Onis, l'exposition des Perfides et le kill des Perfides ne sont pas des pouvoirs.",
+		"details": "Le pouvoir utilisé par Mog-Nyan compte dans le nombre de pouvoirs effectués durant la nuit.",
+		"exemple": "Je suis Mog-Nyan et je demande de savoir combien de joueurs ont effectués leurs actions, je verrai \" 7joueurs ont effectués leurs actions\" si Mog-Nyan, Robonyan, Kyubi, Suprarachnus, Camélia, Laure et Marge ont utilisés leurs pouvoirs. ",
+		"exemple": "Je suis Mog-Nyan et je veux savoir si Tabuki a effectué une action, je verrai : \"Tabuki a effectué une action sur Le Sniper\" si Tabuki est Robonyan et a utilisé son pouvoir sur Le Sniper. ",
+		"image": "roles/mognyan.png"
 	}
 ]
