@@ -119,5 +119,17 @@
 		"exemple": "Je suis Couchtar et je veux savoir si Tabuki a parlé durant la nuit, je verrai : \"Tabuki a parlé durant la nuit\" si Tabuki a parlé dans New-Yorkai (salon des Komaventuriers)",
 		"exemple": "Je suis Couchtar et je veux savoir combien de personnes ont parlés la nuit, je verrai : \"6 personnes ont parlés pendant la nuit\" si 2 personnes ont parlés dans le Palais Enma, 2 ont parlés dans New-Yorkai, 2 ont parlés dans le salon des Fruitnyan.",
 		"image": "roles/couchtar.png"
+	},
+			{
+		"name": "Robonyan F",
+		"camp": "Yo-Kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+				"Chaque nuit, Robonyan F peut demander à connaître tous les pouvoirs qui ont étés effectués depuis le début de la partie sur la personne choisie.",
+			]
+		},
+		"exemple": "Je suis Robonyan F et je décide de connaître les envoûtements qu'à subit Tabuki, je verrai : \"Tabuki a été bloqué, Tabuki a été vampirisé, Tabuki a été protégé des Onis et Tabuki a été regardé par le Robonyan\" si Tabuki a été bloqué, vampirisé, protégé contre les Onis et regardé par le Robonyan.",
+		"image": "roles/robonyanf.png"
 	}
 ]
