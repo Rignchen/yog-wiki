@@ -34,6 +34,43 @@
 		"details": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 		"exemple": "Je suis Robonyan et je décide de connaître le rôle de Tabuki, je verrai : \"Le rôle de Tabuki est : Jibanyan\" si celui-ci est Jibanyan",
 		"image": "roles/robonyan.png"
+	},
+		{
+		"name": "Kyubi",
+		"camp": "Yo-Kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+				"Chaque nuit, Kyubi peut choisir 3 personnes, et est prévenu si il y a un Oni ou plus parmi ces trois joueurs (Kyubi ne sait pas le nombre d'Onis précisément, il sait juste si il y en a au moins un ou non) ",
+			]
+		},
+		"details": "Kyubi n'est pas capable de savoir si il y a des Perfides, Solitaires ou membres de couples avec son pouvoir.",
+		"exemple": "Je suis Kyubi et je décide de regarder si il y a au moins un Oni entre Tabuki, Raf et Le Sniper, je verrai : \"Il y a au moins un Oni ou plus parmi cette liste de joueurs\" si Tabuki est Oni et les 2 autres non.",
+		"image": "roles/kyubi.png"
+	},
+		{
+		"name": "Robonyan Ultime",
+		"camp": "Yo-Kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+				"Une nuit sur deux, Robonyan Ultime peut poser une question fermée au Maitre du Yo-Kai World (Une question fermée est une question à laquelle on ne peut y répondre que par oui ou par non)",
+			]
+		},
+		"exemple": "Je suis Robonyan Ultime et je demande au Maitre du Yo-Kai World \"Tabuki est-il en couple ?\" Je verrai : \"Oui\" si Tabuki est en couple.",
+		"image": "roles/robonyanultime.png"
+	},
+			{
+		"name": "Obskyurbi",
+		"camp": "Yo-Kai",
+		"aura": "Radieuse",
+		"pouvoirs": {
+			"nuit": [
+				"Chaque nuit, Obskyurbi peut choisir 3 personnes, et est prévenu si il y a un Perfide ou plus parmi ces trois joueurs (Obskyurbi ne sait pas le nombre de Perfides précisément, il sait juste si il y en a au moins un ou non)",
+			]
+		},
+		"details": "Obskyurbi n'est pas capable de savoir si il y a des Onis, Solitaires ou membres de couples avec son pouvoir.",
+		"exemple": "Je suis Obskyurbi et je décide de regarder si il y a au moins un Perfide entre Tabuki, Raf et Le Sniper, je verrai : \"Il y a au moins un Perfide ou plus parmi cette liste de joueurs\" si Tabuki est Perfide et les 2 autres non.",
+		"image": "roles/obskyurbi.png"
 	}
-
 ]
