@@ -14,7 +14,13 @@
 	/* text: bg+border #990000 1em; */
 	--color: #FF546BFF;
 	background-color: var(--color);
-	border: 0.5rem solid var(--color);
+	border: 0.25rem solid var(--color);
 	border-radius: 1em;
-	padding: 1em;
+	padding: 0.5em;
+}
+@media (width >= 48rem) {
+	.text-bubble {
+		border-width: 0.5rem;
+		padding: 1em;
+	}
 }
