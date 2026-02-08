@@ -21,7 +21,7 @@ export class RoleDetails {
 		this.route.params.subscribe((params) => {
 			const name = params['name'];
 			this.role = this.roleService.list.find(
-				(role) => role.name.toLowerCase() === name,
+				(role) => role.normalizedName === name
 			);
 			if (!this.role) return;
 			this.descriptions = [
