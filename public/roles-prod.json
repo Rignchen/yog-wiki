@@ -16,8 +16,7 @@
 		],
 		"exemples": [
 			"Extrabuki est mort je suis Eterna donc j'utilise son pouvoir, donc je peux tuer et je devient invulnérable a l'attaque des onis pour cette nuit, en conséquence mon aura devient Bestiale."
-		],
-		"image": "roles/eterna.png"
+		]
 	},
 	{
 		"name": "Jibanyan",
@@ -25,8 +24,7 @@
 		"aura": "Neutre",
 		"details":[
 			"Jibanyan est un simple Yo-Kai qui ne possède aucuns pouvoirs."
-		],
-		"image": "roles/jibanyan.png"
+		]
 	},
 	{
 		"name": "Robonyan",
@@ -39,8 +37,7 @@
 		},
 		"exemples": [
 			"Je suis Robonyan et je décide de connaître le rôle de Tabuki, je verrai : \"Le rôle de Tabuki est : Jibanyan\" si celui-ci est Jibanyan"
-		],
-		"image": "roles/robonyan.png"
+		]
 	},
 	{
 		"name": "Kyubi",
@@ -56,8 +53,7 @@
 		],
 		"exemples": [
 			"Je suis Kyubi et je décide de regarder si il y a au moins un Oni entre Tabuki, Ghia et Le Sniper, je verrai : \"Il y a au moins un Oni ou plus parmi cette liste de joueurs\" si Tabuki est Oni et les 2 autres non."
-		],
-		"image": "roles/kyubi.png"
+		]
 	},
 	{
 		"name": "Robonyan Ultime",
@@ -70,8 +66,7 @@
 		},
 		"exemples": [
 			"Je suis Robonyan Ultime et je demande au Maitre du Yo-Kai World \"Tabuki est-il en couple ?\" Je verrai : \"Oui\" si Tabuki est en couple."
-		],
-		"image": "roles/robonyanultime.png"
+		]
 	},
 	{
 		"name": "Obskyurbi",
@@ -87,8 +82,7 @@
 		],
 		"exemples": [
 			"Je suis Obskyurbi et je décide de regarder si il y a au moins un Perfide entre Tabuki, Lace et Le Sniper, je verrai : \"Il y a au moins un Perfide ou plus parmi cette liste de joueurs\" si Tabuki est Perfide et les 2 autres non."
-		],
-		"image": "roles/obskyurbi.png"
+		]
 	},
 	{
 		"name": "Égare-dare",
@@ -104,8 +98,7 @@
 		],
 		"exemples": [
 			"Je suis Égare-Dare et je veux connaître le dernier message envoyé dans la Terr'heure, je verrai : \"Le dernier message de la Terr'heure est : Donc, on tue Tabuki cette nuit\""
-		],
-		"image": "roles/egaredare.png"
+		]
 	},
 	{
 		"name": "Espi",
@@ -121,8 +114,7 @@
 		],
 		"exemples": [
 			"Je suis Espi et je décide de connaître l'aura de Tabuki, je verrai : \"L'aura de Tabuki est : Bestiale\" si celui-ci possède une aura bestiale."
-		],
-		"image": "roles/espi.png"
+		]
 	},
 	{
 		"name": "Couchtar",
@@ -146,8 +138,7 @@
 		"exemples": [
 			"Je suis Couchtar et je veux savoir si Tabuki a parlé durant la nuit, je verrai : \"Tabuki a parlé durant la nuit\" si Tabuki a parlé dans New-Yorkai (salon des Komaventuriers)",
 			"Je suis Couchtar et je veux savoir combien de personnes ont parlés la nuit, je verrai : \"6 personnes ont parlés pendant la nuit\" si 2 personnes ont parlés dans le Palais Enma, 2 ont parlés dans New-Yorkai, 2 ont parlés dans le salon des Fruitnyan."
-		],
-		"image": "roles/couchtar.png"
+		]
 	},
 	{
 		"name": "Robonyan F",
@@ -160,8 +151,7 @@
 		},
 		"exemples": [
 			"Je suis Robonyan F et je décide de connaître les envoûtements qu'à subit Tabuki, je verrai : \"Tabuki a été bloqué, Tabuki a été vampirisé, Tabuki a été protégé des Onis et Tabuki a été regardé par le Robonyan\" si Tabuki a été bloqué, vampirisé, protégé contre les Onis et regardé par le Robonyan."
-		],
-		"image": "roles/robonyanf.png"
+		]
 	},
 	{
 		"name": "Mog-nyan",
@@ -181,8 +171,7 @@
 		"exemples": [
 			"Je suis Mog-Nyan et je demande de savoir combien de joueurs ont effectués leurs actions, je verrai \" 7joueurs ont effectués leurs actions\" si Mog-Nyan, Robonyan, Kyubi, Suprarachnus, Camélia, Laure et Marge ont utilisés leurs pouvoirs. ",
 			"Je suis Mog-Nyan et je veux savoir si Tabuki a effectué une action, je verrai : \"Tabuki a effectué une action sur Le Sniper\" si Tabuki est Robonyan et a utilisé son pouvoir sur Le Sniper. "
-		],
-		"image": "roles/mognyan.png"
+		]
 	},
 	{
 		"name": "Dr. Néant",
@@ -196,8 +185,7 @@
 		"details": [
 			"La personne morte invitée dans le ticket garde l'accès aux Lymbes Éternelles pendant ce temps.",
 			"Il ne peut pas inviter la même personne 2fois dans la même partie."
-		],
-		"image": "roles/drneant.png"
+		]
 	},
 	{
 		"name": "Mamollina",
@@ -210,7 +198,6 @@
 		},
 		"exemples": [
 			"Je suis Mamollina et je demande de spoiler le rôle de Gargaros, je verrai dans le salon des annonces : \"Gargaros est parmis Tabuki, Ghia, Le Sniper, Lace et Elina\" si Tabuki est Gargaros."
-		],
-		"image": "roles/mamollina.png"
+		]
 	}
 ]
