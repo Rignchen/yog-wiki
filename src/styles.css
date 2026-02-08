@@ -4,6 +4,7 @@
 
 :root {
 	/* bg: 'bg.png' */
+	background-color: #72062AFF;
 	background-image: url('./assets/bg.png');
 	background-size: cover;
 	background-attachment: fixed;
