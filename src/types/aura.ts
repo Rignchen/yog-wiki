@@ -1,6 +1,6 @@
 enum Aura {
-	Pure = 'Pure',
+	Radieuse = 'Radieuse',
 	Neutre = 'Neutre',
-	Demon = 'Demon',
+	Obscure = 'Obscure',
 }
 export default Aura;
