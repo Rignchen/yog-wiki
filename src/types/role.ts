@@ -5,6 +5,7 @@ import type jsonRole from '#types/jsonRole';
 export class Role {
 	constructor(roleData: jsonRole) {
 		this.name = roleData.name;
+		this.normalizedName = Role.normalizeName(roleData.name);
 		this.camp = roleData.camp;
 		this.aura = roleData.aura;
 		this.caracteristiques = roleData.caracteristiques ?? [];
@@ -16,8 +17,11 @@ export class Role {
 		this.exemples = roleData.exemples ?? [];
 		this.image =
 			roleData.image ??
-			`roles/${this.name.toLowerCase().replace(/ /g, '_')}.png`;
-		this.seeAlso = roleData.seeAlso ?? [];
+			`roles/${this.normalizedName}.png`;
+		this.seeAlso = roleData.seeAlso?.map((seeAlso) => ({
+			name: seeAlso,
+			normalizedName: Role.normalizeName(seeAlso),
+		})) ?? [];
 	}
 	name: string;
 	camp: Camp;
@@ -30,5 +34,16 @@ export class Role {
 	details: string[];
 	exemples: string[];
 	image: string;
-	seeAlso: string[];
+	seeAlso: {
+		name: string;
+		normalizedName: string;
+	}[];
+
+	normalizedName: string;
+
+	static normalizeName(name: string): string {
+		return name
+			.toLowerCase()
+			.replaceAll(' ', '_');
+	}
 }
