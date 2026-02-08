@@ -13,7 +13,7 @@ export class Role {
 			nuit: roleData.pouvoirs?.nuit ?? [],
 		};
 		this.details = roleData.details;
-		this.exemple = roleData.exemple;
+		this.exemples = roleData.exemples ?? [];
 		this.image =
 			roleData.image ??
 			`roles/${this.name.toLowerCase().replace(/ /g, '_')}.png`;
@@ -27,8 +27,8 @@ export class Role {
 		jour: string[];
 		nuit: string[];
 	};
-	details: string;
-	exemple?: string;
+	details: string[];
+	exemples: string[];
 	image: string;
 	seeAlso: string[];
 }

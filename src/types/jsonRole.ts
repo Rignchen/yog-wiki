@@ -10,8 +10,8 @@ interface Role {
 		jour?: string[];
 		nuit?: string[];
 	};
-	details: string;
-	exemple?: string;
+	details: string[];
+	exemples?: string[];
 	image?: string;
 	seeAlso?: string[];
 }
