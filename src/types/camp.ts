@@ -1,6 +1,7 @@
 enum Camp {
-	Yokai = 'Yokai',
+	Yokai = 'Yo-Kai',
 	Oni = 'Oni',
+	Perfid = 'Perfid',
 	Solitaire = 'Solitaire',
 	Special = 'Special',
 }

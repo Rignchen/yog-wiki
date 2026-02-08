@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "tailwindcss";
+
+:root {
+	/* bg: 'bg.png' */
+	background-image: url('./assets/bg.png');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.text-bubble {
+	/* text: bg+border #990000 1em; */
+	--color: #FF546BFF;
+	background-color: var(--color);
+	border: 0.5rem solid var(--color);
+	border-radius: 1em;
+	padding: 1em;
+}
