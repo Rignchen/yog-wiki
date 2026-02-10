@@ -43,7 +43,7 @@ export class Role {
 	static normalizeName(name: string): string {
 		return name
 			.toLowerCase()
-			.replaceAll(/[- ]/g, '_')
+			.replaceAll(/[- .]/g, '_')
 			.replaceAll(/[éèêë]/g, 'e')
 			.replaceAll(/[àâä]/g, 'a')
 			.replaceAll(/[îï]/g, 'i')
