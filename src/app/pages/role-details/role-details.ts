@@ -1,7 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, inject } from '@angular/core';
 import { Roles } from '#services/roles';
-import { Role as RoleType } from '#types/role';
+import type { Role } from '#types/role';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 	styleUrl: './role-details.css',
 })
 export class RoleDetails {
-	public role: RoleType | undefined;
+	public role: Role | undefined;
 	roleService = inject(Roles);
 	protected descriptions: { type: string; text: string }[] = [];
 
