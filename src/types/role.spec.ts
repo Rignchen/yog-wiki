@@ -2,6 +2,7 @@ import { Role } from './role';
 
 import type jsonRole from '#types/jsonRole';
 import Aura from '#types/aura';
+import Camp from '#types/camp';
 
 import exempleJsonRole from '#public/roles.json';
 
@@ -45,6 +46,21 @@ describe('Role', () => {
 			};
 			const role = new Role(roleData as jsonRole);
 			expect(role.aura).toBe(expected);
+		});
+
+		test.each([
+			["Yo-Kai", Camp.Yokai],
+			["Oni", Camp.Oni],
+			["Perfid", Camp.Perfid],
+			["Solitaire", Camp.Solitaire],
+			["Special", Camp.Special],
+		])('should cast camp "%s" to "%s"', (camp, expected) => {
+			const roleData = {
+				...exempleJsonRole[0],
+				camp,
+			};
+			const role = new Role(roleData as jsonRole);
+			expect(role.camp).toBe(expected);
 		});
 	});
 });
