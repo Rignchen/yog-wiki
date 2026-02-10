@@ -1,5 +1,5 @@
 import { ActivatedRoute } from '@angular/router';
-import { Component, inject } from '@angular/core';
+import { Component, inject, WritableSignal, signal } from '@angular/core';
 import { Roles } from '#services/roles';
 import type { Role } from '#types/role';
 import { RouterModule } from '@angular/router';
@@ -11,7 +11,8 @@ import { RouterModule } from '@angular/router';
 	styleUrl: './role-details.css',
 })
 export class RoleDetails {
-	public role: Role | undefined;
+	private readonly _role: WritableSignal<Role | undefined> = signal(undefined);
+	public readonly role = this._role.asReadonly();
 	roleService = inject(Roles);
 	protected descriptions: { type: string; text: string }[] = [];
 
@@ -20,14 +21,13 @@ export class RoleDetails {
 	ngOnInit() {
 		this.route.params.subscribe((params) => {
 			const name = params['name'];
-			this.role = this.roleService.list.find(
-				(role) => role.normalizedName === name
-			);
-			if (!this.role) return;
+			const role = this.roleService.list.find((role) => role.normalizedName === name);
+			this._role.set(role);
+			if (!role) return;
 			this.descriptions = [
-				...this.role.caracteristiques.map((carac) => ({ type: 'Caractéristique', text: carac })),
-				...this.role.pouvoirs.jour.map((pouvoir) => ({ type: 'Pouvoir de jour', text: pouvoir })),
-				...this.role.pouvoirs.nuit.map((pouvoir) => ({ type: 'Pouvoir de nuit', text: pouvoir })),
+				...role.caracteristiques.map((carac) => ({ type: 'Caractéristique', text: carac })),
+				...role.pouvoirs.jour.map((pouvoir) => ({ type: 'Pouvoir de jour', text: pouvoir })),
+				...role.pouvoirs.nuit.map((pouvoir) => ({ type: 'Pouvoir de nuit', text: pouvoir })),
 			];
 		});
 	}
