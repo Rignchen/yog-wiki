@@ -3,7 +3,11 @@
 	@if (!role) {
 		<p class="text-bubble">Rôle non trouvé.</p>
 	} @else {
-		<img [src]="role.image" class="img-fluid mb-3 rounded-xl h-100" />
+		<img
+			[src]="role.image"
+			class="img-fluid mb-3 rounded-xl h-100"
+			alt="Image de {{ role.name }}"
+		/>
 
 		<div class="text-bubble flex flex-col items-center">
 			<h1 class="mb-6 text-3xl font-bold">{{ role.name }}</h1>
@@ -15,7 +19,7 @@
 				} @else {
 					avec
 					@if (role.caracteristiques.length > 0) {
-						@if (role.caracteristiques.length == 1) {
+						@if (role.caracteristiques.length === 1) {
 							une caractéristique
 						} @else {
 							des caractéristiques
@@ -25,10 +29,12 @@
 						et
 					}
 					@if (
-						role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
+						role.pouvoirs.jour.length + role.pouvoirs.nuit.length >
+						0
 					) {
 						@if (
-							role.pouvoirs.jour.length + role.pouvoirs.nuit.length ==
+							role.pouvoirs.jour.length +
+								role.pouvoirs.nuit.length ===
 							1
 						) {
 							un pouvoir
@@ -73,7 +79,10 @@
 				<span class="mt-4 font-semibold mr-2">Voir aussi:</span>
 				<div class="flex flex-row flex-wrap gap-2">
 					@for (seeAlsoRole of role.seeAlso; track seeAlsoRole) {
-						<a [routerLink]="['/role', seeAlsoRole.normalizedName]">{{ seeAlsoRole.name }}</a>
+						<a
+							[routerLink]="['/role', seeAlsoRole.normalizedName]"
+							>{{ seeAlsoRole.name }}</a
+						>
 					}
 				</div>
 			}

@@ -11,12 +11,11 @@ import { RouterModule } from '@angular/router';
 	styleUrl: './role-details.css',
 })
 export class RoleDetails {
+	private route = inject(ActivatedRoute);
 	private readonly _role: WritableSignal<Role | undefined> = signal(undefined);
 	public readonly role = this._role.asReadonly();
 	roleService = inject(Roles);
 	protected descriptions: { type: string; text: string }[] = [];
-
-	constructor(private route: ActivatedRoute) {}
 
 	ngOnInit() {
 		this.route.params.subscribe((params) => {
@@ -25,9 +24,18 @@ export class RoleDetails {
 			this._role.set(role);
 			if (!role) return;
 			this.descriptions = [
-				...role.caracteristiques.map((carac) => ({ type: 'Caractéristique', text: carac })),
-				...role.pouvoirs.jour.map((pouvoir) => ({ type: 'Pouvoir de jour', text: pouvoir })),
-				...role.pouvoirs.nuit.map((pouvoir) => ({ type: 'Pouvoir de nuit', text: pouvoir })),
+				...role.caracteristiques.map((carac) => ({
+					type: 'Caractéristique',
+					text: carac,
+				})),
+				...role.pouvoirs.jour.map((pouvoir) => ({
+					type: 'Pouvoir de jour',
+					text: pouvoir,
+				})),
+				...role.pouvoirs.nuit.map((pouvoir) => ({
+					type: 'Pouvoir de nuit',
+					text: pouvoir,
+				})),
 			];
 		});
 	}
