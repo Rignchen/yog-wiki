@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
 
 import { RoleDetails } from './role-details';
 
@@ -9,6 +10,18 @@ describe('RoleDetails', () => {
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
 			imports: [RoleDetails],
+			providers: [
+				{
+					provide: ActivatedRoute,
+					useValue: {
+						params: {
+							subscribe: (callback: any) => {
+								callback({ id: 'test-role-id' });
+							},
+						},
+					},
+				},
+			],
 		}).compileComponents();
 
 		fixture = TestBed.createComponent(RoleDetails);
