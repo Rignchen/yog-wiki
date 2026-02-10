@@ -21,13 +21,22 @@ export class RoleDetails {
 		this.route.params.subscribe((params) => {
 			const name = params['name'];
 			this.role = this.roleService.list.find(
-				(role) => role.normalizedName === name
+				(role) => role.normalizedName === name,
 			);
 			if (!this.role) return;
 			this.descriptions = [
-				...this.role.caracteristiques.map((carac) => ({ type: 'Caractéristique', text: carac })),
-				...this.role.pouvoirs.jour.map((pouvoir) => ({ type: 'Pouvoir de jour', text: pouvoir })),
-				...this.role.pouvoirs.nuit.map((pouvoir) => ({ type: 'Pouvoir de nuit', text: pouvoir })),
+				...this.role.caracteristiques.map((carac) => ({
+					type: 'Caractéristique',
+					text: carac,
+				})),
+				...this.role.pouvoirs.jour.map((pouvoir) => ({
+					type: 'Pouvoir de jour',
+					text: pouvoir,
+				})),
+				...this.role.pouvoirs.nuit.map((pouvoir) => ({
+					type: 'Pouvoir de nuit',
+					text: pouvoir,
+				})),
 			];
 		});
 	}

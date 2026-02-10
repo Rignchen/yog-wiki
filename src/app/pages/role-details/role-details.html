@@ -14,7 +14,8 @@
 						role.pouvoirs.nuit.length ==
 					0
 				) {
-					{{ role.name }} est un rôle sans caractéristiques ni pouvoirs.
+					{{ role.name }} est un rôle sans caractéristiques ni
+					pouvoirs.
 				} @else {
 					{{ role.name }} est un rôle avec
 					@if (role.caracteristiques.length > 0) {
@@ -26,15 +27,18 @@
 					}
 					@if (
 						role.caracteristiques.length > 0 &&
-						role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
+						role.pouvoirs.jour.length + role.pouvoirs.nuit.length >
+							0
 					) {
 						et
 					}
 					@if (
-						role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
+						role.pouvoirs.jour.length + role.pouvoirs.nuit.length >
+						0
 					) {
 						@if (
-							role.pouvoirs.jour.length + role.pouvoirs.nuit.length ==
+							role.pouvoirs.jour.length +
+								role.pouvoirs.nuit.length ==
 							1
 						) {
 							un pouvoir
@@ -79,7 +83,10 @@
 				<span class="mt-4 font-semibold mr-2">Voir aussi:</span>
 				<div class="flex flex-row flex-wrap gap-2">
 					@for (seeAlsoRole of role.seeAlso; track seeAlsoRole) {
-						<a [routerLink]="['/role', seeAlsoRole.normalizedName]">{{ seeAlsoRole.name }}</a>
+						<a
+							[routerLink]="['/role', seeAlsoRole.normalizedName]"
+							>{{ seeAlsoRole.name }}</a
+						>
 					}
 				</div>
 			}
