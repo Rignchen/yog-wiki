@@ -16,4 +16,3 @@ runs:
               npm install -g pnpm
               pnpm install --frozen-lockfile
           shell: bash
-

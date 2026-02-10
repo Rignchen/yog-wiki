@@ -12,8 +12,7 @@ jobs:
             - uses: actions/checkout@v6
             - uses: ./.github/actions/prepare
             - name: Lint code
-              run: |
-                  pnpm run lint
+              run: pnpm run lint
 
     check-format:
         runs-on: ubuntu-latest
@@ -21,8 +20,7 @@ jobs:
             - uses: actions/checkout@v6
             - uses: ./.github/actions/prepare
             - name: Check code format
-              run: |
-                  pnpm run format:check
+              run: pnpm run format:check
 
     try-build:
         runs-on: ubuntu-latest
@@ -30,8 +28,7 @@ jobs:
             - uses: actions/checkout@v6
             - uses: ./.github/actions/prepare
             - name: Try build
-              run: |
-                  pnpm run build:check
+              run: pnpm run build
 
     test:
         runs-on: ubuntu-latest
@@ -40,6 +37,4 @@ jobs:
             - uses: actions/checkout@v6
             - uses: ./.github/actions/prepare
             - name: Run tests
-              run: |
-                  pnpm run test:coverage --watch=false
-
+              run: pnpm run test:coverage --watch=false
