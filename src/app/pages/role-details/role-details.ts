@@ -11,11 +11,10 @@ import { RouterModule } from '@angular/router';
 	styleUrl: './role-details.css',
 })
 export class RoleDetails implements OnInit {
+	private route = inject(ActivatedRoute);
 	public role: RoleType | undefined;
 	roleService = inject(Roles);
 	protected descriptions: { type: string; text: string }[] = [];
-
-	constructor(private route: ActivatedRoute) {}
 
 	ngOnInit() {
 		this.route.params.subscribe((params) => {

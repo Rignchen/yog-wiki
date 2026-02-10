@@ -2,7 +2,11 @@
 	@if (!role) {
 		<p class="text-bubble">Rôle non trouvé.</p>
 	} @else {
-		<img [src]="role.image" class="img-fluid mb-3 rounded-xl h-100" alt="Image de {{ role.name }}" />
+		<img
+			[src]="role.image"
+			class="img-fluid mb-3 rounded-xl h-100"
+			alt="Image de {{ role.name }}"
+		/>
 
 		<div class="text-bubble flex flex-col items-center">
 			<h1 class="mb-6 text-3xl font-bold">{{ role.name }}</h1>
