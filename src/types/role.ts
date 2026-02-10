@@ -1,5 +1,5 @@
-import Camp from '#types/camp';
-import Aura from '#types/aura';
+import type Camp from '#types/camp';
+import type Aura from '#types/aura';
 import type jsonRole from '#types/jsonRole';
 
 export class Role {

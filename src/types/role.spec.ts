@@ -1,5 +1,10 @@
 import { Role } from './role';
 
+import type jsonRole from '#types/jsonRole';
+import Aura from '#types/aura';
+
+import exempleJsonRole from '#public/roles.json';
+
 describe('Role', () => {
 	describe('normalizeName', () => {
 		test.each([
@@ -25,6 +30,21 @@ describe('Role', () => {
 
 		it('should cast to lowercase', () => {
 			expect(Role.normalizeName('RoLeNaMe')).toBe('rolename');
+		});
+	});
+
+	describe('constructor', () => {
+		test.each([
+			["Radieuse", Aura.Radieuse],
+			["Neutre", Aura.Neutre],
+			["Obscure", Aura.Obscure],
+		])('should cast aura "%s" to "%s"', (aura, expected) => {
+			const roleData = {
+				...exempleJsonRole[0],
+				aura,
+			};
+			const role = new Role(roleData as jsonRole);
+			expect(role.aura).toBe(expected);
 		});
 	});
 });
