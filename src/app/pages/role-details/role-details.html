@@ -8,15 +8,11 @@
 			<h1 class="mb-6 text-3xl font-bold">{{ role.name }}</h1>
 
 			<em class="italic mb-1 text-sm text-gray-700">
-				@if (
-					role.caracteristiques.length +
-						role.pouvoirs.jour.length +
-						role.pouvoirs.nuit.length ==
-					0
-				) {
-					{{ role.name }} est un rôle sans caractéristiques ni pouvoirs.
+				{{ role.name }} est un rôle
+				@if ( descriptions.length == 0 ) {
+					sans caractéristiques ni pouvoirs.
 				} @else {
-					{{ role.name }} est un rôle avec
+					avec
 					@if (role.caracteristiques.length > 0) {
 						@if (role.caracteristiques.length == 1) {
 							une caractéristique
@@ -24,10 +20,7 @@
 							des caractéristiques
 						}
 					}
-					@if (
-						role.caracteristiques.length > 0 &&
-						role.pouvoirs.jour.length + role.pouvoirs.nuit.length > 0
-					) {
+					@if ( descriptions.length > role.caracteristiques.length ) {
 						et
 					}
 					@if (
