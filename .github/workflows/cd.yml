@@ -14,11 +14,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v6
-            # Build angular
-            - name: Install dependencies
-              run: |
-                  npm install -g pnpm
-                  pnpm install --frozen-lockfile
+            - uses: ./.github/actions/prepare
             - name: Build project
               run: |
                   pnpm build --configuration=production --base-href=/yog-wiki/
@@ -32,3 +28,4 @@ jobs:
                   publish_branch: gh-pages
                   user_name: github-actions[bot]
                   user_email: github-actions[bot]@users.noreply.github.com
+

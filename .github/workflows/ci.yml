@@ -1,69 +1,45 @@
 name: Ensure code quality
 on:
     pull_request:
-        types: [opened, reopened]
         branches:
             - main
     workflow_dispatch:
 
 jobs:
-    prepare:
+    lint:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v6
-            # Build angular
-            - name: Install dependencies
-              run: |
-                  npm install -g pnpm
-                  pnpm install --frozen-lockfile
-            # Create an artifact to reuse in other jobs
-            - name: Create artifact
-              uses: actions/upload-artifact@v6
-              with:
-                  name: prepare
-                  path: |
-                      .
-    lint:
-        needs: prepare
-        runs-on: ubuntu-latest
-        steps:
-            - name: Download artifact
-              uses: actions/download-artifact@v7
-              with:
-                  name: prepare
+            - uses: ./.github/actions/prepare
             - name: Lint code
               run: |
                   pnpm run lint
+
     check-format:
-        needs: prepare
         runs-on: ubuntu-latest
         steps:
-            - name: Download artifact
-              uses: actions/download-artifact@v7
-              with:
-                  name: prepare
+            - uses: actions/checkout@v6
+            - uses: ./.github/actions/prepare
             - name: Check code format
               run: |
                   pnpm run format:check
+
     try-build:
-        needs: prepare
         runs-on: ubuntu-latest
         steps:
-            - name: Download artifact
-              uses: actions/download-artifact@v7
-              with:
-                  name: prepare
+            - uses: actions/checkout@v6
+            - uses: ./.github/actions/prepare
             - name: Try build
               run: |
                   pnpm run build:check
+
     test:
-        needs: try-build
         runs-on: ubuntu-latest
+        needs: [try-build]
         steps:
-            - name: Download artifact
-              uses: actions/download-artifact@v7
-              with:
-                  name: prepare
+            - uses: actions/checkout@v6
+            - uses: ./.github/actions/prepare
             - name: Run tests
               run: |
                   pnpm run test:coverage --watch=false
+
