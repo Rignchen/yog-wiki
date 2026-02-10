@@ -1,7 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, inject, OnInit } from '@angular/core';
 import { Roles } from '#services/roles';
-import { Role as RoleType } from '#types/role';
+import { Role } from '#types/role';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -11,9 +11,9 @@ import { RouterModule } from '@angular/router';
 	styleUrl: './role-details.css',
 })
 export class RoleDetails implements OnInit {
-	private route = inject(ActivatedRoute);
-	public role: RoleType | undefined;
-	roleService = inject(Roles);
+	private readonly route = inject(ActivatedRoute);
+	private readonly roleService = inject(Roles);
+	public role: Role | undefined;
 	protected descriptions: { type: string; text: string }[] = [];
 
 	ngOnInit() {
