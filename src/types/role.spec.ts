@@ -62,5 +62,18 @@ describe('Role', () => {
 			const role = new Role(roleData as jsonRole);
 			expect(role.camp).toBe(expected);
 		});
+
+		test.each([
+			[undefined,          'roles/role_name.png', 'Role Name'],
+			['custom_image.png', 'custom_image.png',    'Role Name'],
+		])('should infer image "%s" to "%s"', (image, expected, name) => {
+			const roleData = {
+				...exempleJsonRole[0],
+				name,
+				image,
+			};
+			const role = new Role(roleData as jsonRole);
+			expect(role.image).toBe(expected);
+		});
 	});
 });
