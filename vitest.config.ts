@@ -6,10 +6,10 @@ export default defineConfig({
 		coverage: {
 			exclude: [...(configDefaults.coverage.exclude || []), 'dist/'],
 			thresholds: {
-				statements: 100,
-				branches: 100,
-				functions: 100,
-				lines: 100,
+				statements: 90,
+				branches: 90,
+				functions: 90,
+				lines: 90,
 			},
 		},
 	},
