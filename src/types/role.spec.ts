@@ -75,5 +75,19 @@ describe('Role', () => {
 			const role = new Role(roleData as jsonRole);
 			expect(role.image).toBe(expected);
 		});
+
+		test.each([
+			[undefined, {jour: [], nuit: []}],
+			[{jour: ['Power 1']}, {jour: ['Power 1'], nuit: []}],
+			[{nuit: ['Power 2']}, {jour: [], nuit: ['Power 2']}],
+			[{jour: ['Power 1'], nuit: ['Power 2']}, {jour: ['Power 1'], nuit: ['Power 2']}],
+		])('should turn pouvoir "%o" into "%o"', (pouvoirs, expected) => {
+			const roleData = {
+				...exempleJsonRole[0],
+				pouvoirs,
+			};
+			const role = new Role(roleData as jsonRole);
+			expect(role.pouvoirs).toEqual(expected);
+		});
 	});
 });
