@@ -101,5 +101,17 @@ describe('Role', () => {
 			const role = new Role(roleData as jsonRole);
 			expect(role.caracteristiques).toEqual(expected);
 		});
+
+		test.each([
+			[undefined, []],
+			[['Example 1', 'Example 2'], ['Example 1', 'Example 2']],
+		])('should default exemples to "%o"', (exemples, expected) => {
+			const roleData = {
+				...exempleJsonRole[0],
+				exemples,
+			};
+			const role = new Role(roleData as jsonRole);
+			expect(role.exemples).toEqual(expected);
+		});
 	});
 });
