@@ -219,6 +219,25 @@ const roles: jsonRole[] = [
 		"exemples": [
 			"Je suis Mamollina et je demande de spoiler le rôle de Gargaros, je verrai dans le salon des annonces : \"Gargaros est parmis Tabuki, Ghia, Le Sniper, Lace et Elina\" si Tabuki est Gargaros."
 		]
+	},
+	{
+		"name": "Indexter",
+		"camp": Camp.Yokai,
+		"aura": Aura.Radieuse,
+		"pouvoirs": {
+			"nuit": [
+				"Chaque nuit, Indexter choisit 2 joueurs différents et saura si ils sont dans le même camps ou non."
+			]
+		},
+		"details": [
+			"Les couples comptent comme des camps. Et si il est encore en vie, le Cupistol/Donjouant/Pitou sont considérés dans le camps : Couple/Trouple.",
+			"2 Solitaires qui n'ont aucuns liens comptent comme des camps différents.",
+			"Indexter ne peut pas se choisir lui-même"
+		],
+		"exemples": [
+			"Je suis Indexter et je demande à savoir Tabuki et Raf alors je verrai alors : \"Raf et Tabuki ne sont pas dans le même camps\" si Raf est Jibanyan et Tabuki Gargaros"
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	}
 ];
 
