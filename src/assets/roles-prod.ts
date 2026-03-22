@@ -20,7 +20,8 @@ const roles: jsonRole[] = [
 		],
 		"exemples": [
 			"Extrabuki est mort je suis Eterna donc j'utilise son pouvoir, donc je peux tuer et je devient invulnérable a l'attaque des onis pour cette nuit, en conséquence mon aura devient Bestiale."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Jibanyan",
@@ -28,7 +29,8 @@ const roles: jsonRole[] = [
 		"aura": Aura.Neutre,
 		"details":[
 			"Jibanyan est un simple Yo-Kai qui ne possède aucuns pouvoirs."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Robonyan",
@@ -46,7 +48,8 @@ const roles: jsonRole[] = [
 		"seeAlso": [
 			"Robonyan F",
 			"Robonyan Ultime"
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Kyubi",
@@ -62,7 +65,8 @@ const roles: jsonRole[] = [
 		],
 		"exemples": [
 			"Je suis Kyubi et je décide de regarder si il y a au moins un Oni entre Tabuki, Ghia et Le Sniper, je verrai : \"Il y a au moins un Oni ou plus parmi cette liste de joueurs\" si Tabuki est Oni et les 2 autres non."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Robonyan Ultime",
@@ -80,7 +84,8 @@ const roles: jsonRole[] = [
 		"seeAlso": [
 			"Robonyan F",
 			"Robonyan"
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Obskyurbi",
@@ -96,7 +101,8 @@ const roles: jsonRole[] = [
 		],
 		"exemples": [
 			"Je suis Obskyurbi et je décide de regarder si il y a au moins un Perfide entre Tabuki, Lace et Le Sniper, je verrai : \"Il y a au moins un Perfide ou plus parmi cette liste de joueurs\" si Tabuki est Perfide et les 2 autres non."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Égare-dare",
@@ -112,7 +118,8 @@ const roles: jsonRole[] = [
 		],
 		"exemples": [
 			"Je suis Égare-Dare et je veux connaître le dernier message envoyé dans la Terr'heure, je verrai : \"Le dernier message de la Terr'heure est : Donc, on tue Tabuki cette nuit\""
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Espi",
@@ -128,7 +135,8 @@ const roles: jsonRole[] = [
 		],
 		"exemples": [
 			"Je suis Espi et je décide de connaître l'aura de Tabuki, je verrai : \"L'aura de Tabuki est : Bestiale\" si celui-ci possède une aura bestiale."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Couchtar",
@@ -152,7 +160,8 @@ const roles: jsonRole[] = [
 		"exemples": [
 			"Je suis Couchtar et je veux savoir si Tabuki a parlé durant la nuit, je verrai : \"Tabuki a parlé durant la nuit\" si Tabuki a parlé dans New-Yorkai (salon des Komaventuriers)",
 			"Je suis Couchtar et je veux savoir combien de personnes ont parlés la nuit, je verrai : \"6 personnes ont parlés pendant la nuit\" si 2 personnes ont parlés dans le Palais Enma, 2 ont parlés dans New-Yorkai, 2 ont parlés dans le salon des Fruitnyan."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Robonyan F",
@@ -170,7 +179,8 @@ const roles: jsonRole[] = [
 		"seeAlso": [
 			"Robonyan",
 			"Robonyan Ultime"
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Mog-nyan",
@@ -190,7 +200,8 @@ const roles: jsonRole[] = [
 		"exemples": [
 			"Je suis Mog-Nyan et je demande de savoir combien de joueurs ont effectués leurs actions, je verrai \" 7joueurs ont effectués leurs actions\" si Mog-Nyan, Robonyan, Kyubi, Suprarachnus, Camélia, Laure et Marge ont utilisés leurs pouvoirs. ",
 			"Je suis Mog-Nyan et je veux savoir si Tabuki a effectué une action, je verrai : \"Tabuki a effectué une action sur Le Sniper\" si Tabuki est Robonyan et a utilisé son pouvoir sur Le Sniper. "
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Dr. Néant",
@@ -204,7 +215,8 @@ const roles: jsonRole[] = [
 		"details": [
 			"La personne morte invitée dans le ticket garde l'accès aux Lymbes Éternelles pendant ce temps.",
 			"Il ne peut pas inviter la même personne 2fois dans la même partie."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Mamollina",
@@ -218,7 +230,8 @@ const roles: jsonRole[] = [
 		"details": [],
 		"exemples": [
 			"Je suis Mamollina et je demande de spoiler le rôle de Gargaros, je verrai dans le salon des annonces : \"Gargaros est parmis Tabuki, Ghia, Le Sniper, Lace et Elina\" si Tabuki est Gargaros."
-		]
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
 	},
 	{
 		"name": "Indexter",
@@ -238,7 +251,21 @@ const roles: jsonRole[] = [
 			"Je suis Indexter et je demande à savoir Tabuki et Raf alors je verrai alors : \"Raf et Tabuki ne sont pas dans le même camps\" si Raf est Jibanyan et Tabuki Gargaros"
 		],
 		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&"
-	}
+	},
+	{
+		"name": "Kyubot",
+		"camp": Camp.Yokai,
+		"aura": Aura.Radieuse,
+		"pouvoirs": {
+			"nuit": [
+				"Chaque nuit, Kyubot peut choisir 3 personnes, et connait les auras des 3 personnes sans savoir laquelle elles appartiennent a qui."
+			]
+		},
+		"exemples": [
+			"Je suis Kyubot et je décide de regarder les auras de Tabuki, Raf et LeSniper, je verrai : \"2 Lumineuses et 1 Bestiale\" si Tabuki est Robonyan, Raf est Kyubi et LeSniper est Gargaros."
+		],
+		"image": "https://cdn.discordapp.com/attachments/1468368466871455744/1485049138528784485/images.png?ex=69c07349&is=69bf21c9&hm=9dcde284fa6f90a8308b7c30c91c01be35f66409d1c4896c48595e741c10abdf&",
+	},
 ];
 
 export default roles;
