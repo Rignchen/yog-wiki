@@ -1,0 +1,56 @@
+import type jsonRole from '#types/jsonRole';
+import Camp from '#types/camp';
+import Aura from '#types/aura';
+
+const roles: jsonRole[] = [
+	{
+		"name": `Full`,
+		"camp": Camp.Solitaire,
+		"aura": Aura.Neutre,
+		"caracteristiques": [
+			`Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+			`Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+			`Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+		],
+		"pouvoirs": {
+			"jour": [
+				`Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+				`Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+			],
+			"nuit": [
+				`Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+				`Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`
+			]
+		},
+		"details": [
+			`Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+		],
+		"exemples": [
+			`Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
+		],
+		"image": `https://thumbs.dreamstime.com/b/water-flowing-full-glass-28933313.jpg`,
+		"seeAlso": [`Minimal`, `Intermediate`]
+	},
+	{
+		"name": `Intermediate`,
+		"camp": Camp.Solitaire,
+		"aura": Aura.Neutre,
+		"pouvoirs": {
+			"jour": [`Lorem ipsum dolor sit amet.`]
+		},
+		"details": [`Consectetur adipiscing elit.`],
+		"exemples": [
+			`Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+		],
+		"image": `https://thumbs.dreamstime.com/b/businessman-half-empty-full-glass-concept-264206304.jpg`,
+		"seeAlso": [`Minimal`]
+	},
+	{
+		"name": `Minimal`,
+		"camp": Camp.Solitaire,
+		"aura": Aura.Neutre,
+		"image": `https://static.vecteezy.com/system/resources/previews/013/519/821/large_2x/empty-glass-illustration-on-a-white-background-vector.jpg`
+	}
+];
+
+export default roles;

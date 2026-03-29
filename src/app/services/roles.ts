@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Role } from '#types/role';
-import type jsonRole from '#types/jsonRole';
-import RoleList from '#public/roles.json';
+import RoleList from '#data';
 
 @Injectable({
 	providedIn: 'root',
 })
 export class Roles {
-	public list: Role[] = (RoleList as jsonRole[]).map(
+	public list: Role[] = RoleList.map(
 		(roleData) => new Role(roleData),
 	);
 }
