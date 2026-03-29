@@ -72,8 +72,11 @@
 				</table>
 			}
 
-			@for (detail of role.details; track detail) {
-				<p class="mt-2 mb-3">{{ detail }}</p>
+			@if (role.details.length > 0) {
+				<strong class="mt-2 bold text-nowrap">Informations supplémentaires</strong>
+				@for (detail of role.details; track detail) {
+					<p class="mt-1 mb-2">{{ detail }}</p>
+				}
 			}
 
 			@for (exemple of role.exemples; track exemple) {
